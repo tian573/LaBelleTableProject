@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://kit.fontawesome.com/1b5e5f33ec.js" crossorigin="anonymous"></script>
+    <link rel = "icon" type = "image/gif" href = "images/favicon-16x16.png" />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Playfair+Display:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>La Belle Table</title>
+</head>
+<body>
+    <header class="site-header">
+      <div class="header-container">
+        <!-- Logo Area -->
+        <div class="logo-container">
+          <div class="logo-icon">
+            <svg viewBox="0 0 24 24" class="restaurant-icon">
+              <path d="M8.1,13.34L3.91,9.16C2.35,7.59 2.35,5.06 3.91,3.5L10.93,10.5L8.1,13.34M14.88,11.53L13.41,13L20.29,19.88L18.88,21.29L12,14.41L5.12,21.29L3.71,19.88L13.47,10.12C12.76,8.59 13.26,6.44 14.85,4.85C16.76,2.93 19.5,2.57 20.96,4.03C22.43,5.5 22.07,8.24 20.15,10.15C18.56,11.74 16.41,12.24 14.88,11.53Z" />
+            </svg>
+          </div>
+          <h1 class="site-title">La Belle Table</h1>
+          <span class="tagline">Cuisine Française</span>
+        </div>
+        
+        <!-- Navigation -->
+        <nav class="main-navigation">
+          <button class="menu-toggle" aria-expanded="false" aria-controls="primary-menu">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="sr-only">Menu</span>
+          </button>
+          
+          <ul class="nav-menu" id="primary-menu">
+            <li class="nav-item">
+              <a href="#" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#menu-section" class="nav-link">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a href="#reservation" class="nav-link">Reservation</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link dropdown-toggle">More <span class="dropdown-arrow">▼</span></a>
+              <ul class="dropdown-menu">
+                <li class="dropdown-item">
+                  <a href="#about" class="dropdown-link">About</a>
+                </li>
+                <li class="dropdown-item">
+                  <a href="gallery&location.html" class="dropdown-link">Gallery</a>
+                </li>
+                <li class="dropdown-item">
+                  <a href="gallery&location.html#location-section" class="dropdown-link">Location</a>
+                </li>
+              </ul>
+            </li>
+            <i class="fa-regular fa-circle-xmark"></i>
+          </ul>
+          <i class="fa-solid fa-bars"></i>
+        </nav>
+      </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+          <h1 class="title">La Belle Table</h1>
+          <p class="subtitle">Authentic French Cuisine in the Heart of the City</p>
+          <div class="hero-buttons">
+            <a href="#reservation" class="btn primary-btn">Reserve a Table</a>
+            <a href="#menu-section" class="btn secondary-btn">View Menu</a>
+          </div>
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="scroll-indicator">
+          <p>Scroll to discover</p>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <section id="menu-section">
+      <div class="menu-header">
+        <div class="menu-decoration left"></div>
+        <h2>Our Menu</h2>
+        <div class="menu-decoration right"></div>
+      </div>
+      
+      <div class="menu-categories">
+        <button class="menu-category active" data-category="appetizers">Appetizers</button>
+        <button class="menu-category" data-category="main-courses">Main Courses</button>
+        <button class="menu-category" data-category="desserts">Desserts</button>
+        <button class="menu-category" data-category="wines">Wines</button>
+      </div>
+      
+      <div class="menu-container">
+        <!-- Appetizers -->
+        <div class="menu-items active" id="appetizers">
+          <div class="menu-item">
+            <div class="menu-item-image">
+              <img src="images/soupe a l oignon.png" alt="French Onion Soup">
+            </div>
+            <div class="menu-item-info">
+              <div class="menu-item-header">
+                <h3>Soupe à l'Oignon</h3>
+                <span class="price">€12</span>
+              </div>
+              <p class="description">Traditional French onion soup with caramelized onions, beef broth, toasted baguette, and melted Gruyère cheese.</p>
+              <span class="tags"><i class="fas fa-utensils"></i> Chef's Recommendation</span>
+            </div>
+          </div>
+          
+          <div class="menu-item">
+            <div class="menu-item-image">
+              <img src="images/cooked and appetizing escargots de Bourgogne.png" alt="Escargots">
+            </div>
+            <div class="menu-item-info">
+              <div class="menu-item-header">
+                <h3>Escargots de Bourgogne</h3>
+                <span class="price">€14</span>
+              </div>
+              <p class="description">Burgundy snails baked in garlic and parsley butter, served with crusty bread.</p>
+              <span class="tags"><i class="fas fa-award"></i> House Specialty</span>
+            </div>
+          </div>
+          
+          <div class="menu-item">
+            <div class="menu-item-image">
+              <img src="images/foie gras terrine.png" alt="Foie Gras">
+            </div>
+            <div class="menu-item-info">
+              <div class="menu-item-header">
+                <h3>Foie Gras Terrine</h3>
+                <span class="price">€18</span>
+              </div>
+              <p class="description">Duck liver terrine served with toasted brioche, fig compote, and a touch of Sauternes wine jelly.</p>
+              <span class="tags"><i class="fas fa-wine-glass-alt"></i> Wine Pairing Available</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Main Courses -->
+        <div class="menu-items" id="main-courses">
+          <div class="menu-item">
+            <div class="menu-item-image">
+              <img src="images/coq au vin.png" alt="Coq au Vin">
+            </div>
+            <div class="menu-item-info">
+              <div class="menu-item-header">
+                <h3>Coq au Vin</h3>
+                <span class="price">€26</span>
+              </div>
+              <p class="description">Chicken braised with wine, bacon lardons, mushrooms, and pearl onions, served with creamy mashed potatoes.</p>
+              <span class="tags"><i class="fas fa-utensils"></i> Chef's Recommendation</span>
+            </div>
+          </div>
+          
+          <div class="menu-item">
+            <div class="menu-item-image">
+              <img src="images/cooked and appetizing escargots de Bourgogne.png" alt="Beef Bourguignon">
+            </div>
+            <div class="menu-item-info">
+              <div class="menu-item-header">
+                <h3>Boeuf Bourguignon</h3>
+                <span class="price">€28</span>
+              </div>
+              <p class="description">Slow-cooked beef stew in red wine with carrots, pearl onions, and mushrooms, served with buttered noodles.</p>
+              <span class="tags"><i class="fas fa-award"></i> House Specialty</span>
+            </div>
+          </div>
+          
+          <div class="menu-item">
+            <div class="menu-item-image">
+              <img src="images/confit de canard.png" alt="Duck Confit">
+            </div>
+            <div class="menu-item-info">
+              <div class="menu-item-header">
+                <h3>Confit de Canard</h3>
+                <span class="price">€30</span>
+              </div>
+              <p class="description">Duck leg confit with crispy skin, served with roasted fingerling potatoes and orange-infused sauce.</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Desserts -->
+        <div class="menu-items" id="desserts">
+          <div class="menu-item">
+            <div class="menu-item-image">
+              <img src="images/creme brulee.png" alt="Crème Brûlée">
+            </div>
+            <div class="menu-item-info">
+              <div class="menu-item-header">
+                <h3>Crème Brûlée</h3>
+                <span class="price">€10</span>
+              </div>
+              <p class="description">Classic vanilla custard with a caramelized sugar crust, served with fresh berries.</p>
+              <span class="tags"><i class="fas fa-utensils"></i> Chef's Recommendation</span>
+            </div>
+          </div>
+          
+          <div class="menu-item">
+            <div class="menu-item-image">
+              <img src="images/souffle au chocolat.png" alt="Chocolate Soufflé">
+            </div>
+            <div class="menu-item-info">
+              <div class="menu-item-header">
+                <h3>Soufflé au Chocolat</h3>
+                <span class="price">€12</span>
+              </div>
+              <p class="description">Warm chocolate soufflé with a molten center, served with vanilla ice cream.</p>
+              <span class="tags"><i class="fas fa-hourglass-half"></i> 15 minutes preparation time</span>
+            </div>
+          </div>
+          
+          <div class="menu-item">
+            <div class="menu-item-image">
+              <img src="images/tarte tatin.png" alt="Tarte Tatin">
+            </div>
+            <div class="menu-item-info">
+              <div class="menu-item-header">
+                <h3>Tarte Tatin</h3>
+                <span class="price">€11</span>
+              </div>
+              <p class="description">Caramelized upside-down apple tart served warm with crème fraîche.</p>
+              <span class="tags"><i class="fas fa-award"></i> House Specialty</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Wines -->
+        <div class="menu-items" id="wines">
+          <div class="menu-item wine-item">
+            <div class="menu-item-image">
+              <img src="images/an elegant bottle or glass of red wines.png" alt="Red Wine">
+            </div>
+            <div class="menu-item-info">
+              <div class="menu-item-header">
+                <h3>Red Wines</h3>
+              </div>
+              <div class="wine-list">
+                <div class="wine">
+                  <span class="wine-name">Château Margaux 2015</span>
+                  <span class="wine-price">€120</span>
+                  <p class="wine-description">Bordeaux blend with elegant tannins and notes of dark fruit, tobacco, and violets.</p>
+                </div>
+                <div class="wine">
+                  <span class="wine-name">Domaine Romanée-Conti 2017</span>
+                  <span class="wine-price">€180</span>
+                  <p class="wine-description">Burgundy pinot noir with exceptional complexity, silky texture, and remarkable finesse.</p>
+                </div>
+                <div class="wine">
+                  <span class="wine-name">Côtes du Rhône 2019</span>
+                  <span class="wine-price">€45</span>
+                  <p class="wine-description">Medium-bodied with raspberry and black pepper notes, perfect with our meat dishes.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="menu-item wine-item">
+            <div class="menu-item-image">
+              <img src="images/an elegant bottle or glass of white wines.png" alt="White Wine">
+            </div>
+            <div class="menu-item-info">
+              <div class="menu-item-header">
+                <h3>White Wines</h3>
+              </div>
+              <div class="wine-list">
+                <div class="wine">
+                  <span class="wine-name">Puligny-Montrachet 2018</span>
+                  <span class="wine-price">€95</span>
+                  <p class="wine-description">Burgundy chardonnay with notes of citrus, white flowers, and a touch of oak.</p>
+                </div>
+                <div class="wine">
+                  <span class="wine-name">Sancerre 2020</span>
+                  <span class="wine-price">€60</span>
+                  <p class="wine-description">Loire Valley sauvignon blanc with crisp acidity, mineral notes, and hints of grapefruit.</p>
+                </div>
+                <div class="wine">
+                  <span class="wine-name">Alsace Riesling 2019</span>
+                  <span class="wine-price">€50</span>
+                  <p class="wine-description">Dry riesling with floral aromas, stone fruit flavors, and a long, refreshing finish.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="menu-footer">
+        <p><i class="fas fa-info-circle"></i> All our dishes are prepared with fresh, locally-sourced ingredients.</p>
+        <p><i class="fas fa-leaf"></i> Vegetarian and gluten-free options available upon request.</p>
+      </div>
+    </section>
+
+    <section id="about" class="about-section">
+      <div class="about-container">
+        <div class="about-header">
+          <h2 class="about-title">Our Story</h2>
+          <div class="title-underline"></div>
+        </div>
+        
+        <div class="about-content">
+          <div class="about-image-container">
+            <div class="about-image main-image">
+              <img src="images/Ma the La Belle Table restaurant interior.png" alt="La Belle Table Restaurant Interior" />
+            </div>
+            <div class="about-image accent-image">
+              <img src="images/chef preparing dish.png" alt="Chef preparing dish" />
+            </div>
+            <div class="about-image small-image">
+              <img src="images/common ingredients in a French restaurant.png" alt="Fresh ingredients" />
+            </div>
+            <div class="accent-shape"></div>
+          </div>
+          
+          <div class="about-text">
+            <p class="about-subtitle">Welcome to <span class="highlight">La Belle Table</span>, where French culinary tradition meets modern innovation.</p>
+            
+            <p class="about-paragraph">Established in 2010 by Chef Pierre Moreau, La Belle Table has been serving authentic French cuisine with a contemporary twist in the heart of the city. Our journey began with a simple vision: to create a dining experience that honors the rich culinary heritage of France while embracing the freshest local ingredients.</p>
+            
+            <p class="about-paragraph">Each dish at La Belle Table tells a story, reflecting Chef Moreau's classical training in Paris and his passion for seasonal, sustainable cooking. Our menu changes with the seasons, ensuring that every visit offers something new to discover.</p>
+            
+            <div class="about-highlights">
+              <div class="highlight-item">
+                <div class="highlight-icon">
+                  <i class="fas fa-utensils"></i>
+                </div>
+                <div class="highlight-text">
+                  <h3>Authentic Cuisine</h3>
+                  <p>Traditional French techniques with modern presentation</p>
+                </div>
+              </div>
+              
+              <div class="highlight-item">
+                <div class="highlight-icon">
+                  <i class="fas fa-wine-glass-alt"></i>
+                </div>
+                <div class="highlight-text">
+                  <h3>Curated Wine List</h3>
+                  <p>Extensive selection of French and international wines</p>
+                </div>
+              </div>
+              
+              <div class="highlight-item">
+                <div class="highlight-icon">
+                  <i class="fas fa-leaf"></i>
+                </div>
+                <div class="highlight-text">
+                  <h3>Seasonal Ingredients</h3>
+                  <p>Locally sourced, fresh produce and sustainable practices</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="chef-quote">
+              <i class="fas fa-quote-left quote-icon"></i>
+              <blockquote>
+                "At La Belle Table, we don't just serve food; we create memories. Every dish is an expression of our passion for French gastronomy and our commitment to excellence."
+              </blockquote>
+              <div class="quote-author">
+                <img src="images/chef preparing dish.png" alt="Chef Pierre Moreau" class="chef-image">
+                <div class="author-info">
+                  <h4>Pierre Moreau</h4>
+                  <p>Founder & Head Chef</p>
+                </div>
+              </div>
+            </div>
+            
+            <a href="#reservation" class="about-cta">Reserve Your Table</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="reservation" class="reservation-section">
+      <div class="reservation-container">
+        <div class="reservation-header">
+          <h2 class="reservation-title">Make a Reservation</h2>
+          <div class="title-underline"></div>
+          <p class="reservation-subtitle">Experience authentic French cuisine in an elegant setting</p>
+        </div>
+        
+        <div class="reservation-content">
+          <div class="reservation-image">
+            <img src="images/Ma the La Belle Table restaurant interior.png" alt="La Belle Table dining room" />
+            <div class="reservation-accent-shape"></div>
+          </div>
+          
+
+          <form action="https://formsubmit.co/tianlauren6@gmail.com" method="POST" class="reservation-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Your name" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Your email" required>
+              </div>
+            </div>
+            
+            <div class="form-row">
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="+33 1 23 45 67 89" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="guests">Number of Guests</label>
+                <select id="guests" name="guests" required>
+                  <option value="" disabled selected>Select number</option>
+                  <option value="1">1 Person</option>
+                  <option value="2">2 People</option>
+                  <option value="3">3 People</option>
+                  <option value="4">4 People</option>
+                  <option value="5">5 People</option>
+                  <option value="6">6 People</option>
+                  <option value="more">More than 6 (Specify in notes)</option>
+                </select>
+              </div>
+            </div>
+            
+            <div class="form-row">
+              <div class="form-group">
+                <label for="date">Date</label>
+                <input type="date" id="date" name="date" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="time">Time</label>
+                <select id="time" name="time" required>
+                  <option value="" disabled selected>Select time</option>
+                  <optgroup label="Lunch">
+                    <option value="12:00">12:00 PM</option>
+                    <option value="12:30">12:30 PM</option>
+                    <option value="13:00">1:00 PM</option>
+                    <option value="13:30">1:30 PM</option>
+                    <option value="14:00">2:00 PM</option>
+                  </optgroup>
+                  <optgroup label="Dinner">
+                    <option value="19:00">7:00 PM</option>
+                    <option value="19:30">7:30 PM</option>
+                    <option value="20:00">8:00 PM</option>
+                    <option value="20:30">8:30 PM</option>
+                    <option value="21:00">9:00 PM</option>
+                    <option value="21:30">9:30 PM</option>
+                  </optgroup>
+                </select>
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label for="occasion">Special Occasion (Optional)</label>
+              <select id="occasion" name="occasion">
+                <option value="" selected>None</option>
+                <option value="birthday">Birthday</option>
+                <option value="anniversary">Anniversary</option>
+                <option value="business">Business Dinner</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            
+            <div class="form-group">
+              <label for="notes">Special Requests (Optional)</label>
+              <textarea id="notes" name="notes" placeholder="Dietary restrictions, seating preferences, etc."></textarea>
+            </div>
+            
+            <div class="reservation-policy">
+              <p><i class="fas fa-info-circle"></i> Reservations are held for 15 minutes past the scheduled time. Please call if you are running late.</p>
+            </div>
+
+            <input type="hidden" name="access_key" value="66d0a337-af8d-475d-9ffa-2ab18f26d7b3">
+            
+            <button type="submit" class="btn primary-btn reservation-btn">Confirm Reservation</button>
+          </form>
+        </div>
+        
+        <div class="reservation-contact">
+          <p>Prefer to make your reservation by phone? Call us at <a href="tel:+33142861896">+33 1 42 86 18 96</a></p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <h2 class="restaurant-name">La Belle Table</h2>
+            <p class="tagline">Cuisine française authentique depuis 1997</p>
+          </div>
+          
+          <div class="footer-links">
+            <div class="footer-column">
+              <h3 class="footer-heading">Navigate</h3>
+              <ul class="footer-menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#menu-section">Menu</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#reservation">Reservations</a></li>
+              </ul>
+            </div>
+            
+            <div class="footer-column">
+              <h3 class="footer-heading">Contact</h3>
+              <ul class="footer-menu">
+                <li><a href="tel:+33142861896">+33 1 42 86 18 96</a></li>
+                <li><a href="mailto:hello@labelletable.fr">hello@labelletable.fr</a></li>
+                <li><a href="https://maps.google.com/maps?q=48.8534,2.3388" target="_blank">27 Rue Saint-André des Arts</a></li>
+                <li>75006 Paris, France</li>
+              </ul>
+            </div>
+            
+            <div class="footer-column">
+              <h3 class="footer-heading">Hours</h3>
+              <ul class="footer-menu">
+                <li>Monday - Friday</li>
+                <li>12:00 PM - 2:30 PM</li>
+                <li>7:00 PM - 10:30 PM</li>
+                <li>Weekend: Open until 11:00 PM</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+        <div class="social-media">
+          <a href="#" class="social-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+          </a>
+          <a href="#" class="social-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+          </a>
+          <a href="#" class="social-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+          </a>
+        </div>
+        
+        <div class="footer-bottom">
+          <p class="copyright">© 2025 TianLauren All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+
+
+    <script src="script.js"></script>
+    <script src="hamburg.js"></script>
+</body>
+</html>
